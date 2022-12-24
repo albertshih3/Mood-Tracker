@@ -11,6 +11,11 @@
 		512DD203295640770023C6C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512DD202295640770023C6C6 /* ContentView.swift */; };
 		512DD205295640780023C6C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 512DD204295640780023C6C6 /* Assets.xcassets */; };
 		512DD208295640780023C6C6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 512DD207295640780023C6C6 /* Preview Assets.xcassets */; };
+		512DD21229564A550023C6C6 /* HYU_CatHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512DD21129564A550023C6C6 /* HYU_CatHome.swift */; };
+		51924779295689B500A5761F /* ButtonPressActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51924778295689B500A5761F /* ButtonPressActions.swift */; };
+		51B51DAC295659F6005DA37C /* HYU_CatSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B51DAB295659F6005DA37C /* HYU_CatSettings.swift */; };
+		51B51DAE29565A0D005DA37C /* HYU_CatAnalyze.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B51DAD29565A0D005DA37C /* HYU_CatAnalyze.swift */; };
+		51F76C42295776A300DEF058 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 51F76C41295776A300DEF058 /* SwiftKeychainWrapper */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		512DD202295640770023C6C6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		512DD204295640780023C6C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		512DD207295640780023C6C6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		512DD210295648540023C6C6 /* Mood-Tracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Mood-Tracker-Info.plist"; sourceTree = SOURCE_ROOT; };
+		512DD21129564A550023C6C6 /* HYU_CatHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYU_CatHome.swift; sourceTree = "<group>"; };
+		51924778295689B500A5761F /* ButtonPressActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPressActions.swift; sourceTree = "<group>"; };
+		51B51DAB295659F6005DA37C /* HYU_CatSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYU_CatSettings.swift; sourceTree = "<group>"; };
+		51B51DAD29565A0D005DA37C /* HYU_CatAnalyze.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYU_CatAnalyze.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51F76C42295776A300DEF058 /* SwiftKeychainWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +46,7 @@
 		512DD1F4295640770023C6C6 = {
 			isa = PBXGroup;
 			children = (
+				512DD210295648540023C6C6 /* Mood-Tracker-Info.plist */,
 				512DD1FF295640770023C6C6 /* Mood Tracker */,
 				512DD1FE295640770023C6C6 /* Products */,
 			);
@@ -51,8 +63,9 @@
 		512DD1FF295640770023C6C6 /* Mood Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				519247772956899500A5761F /* Resources */,
+				51B51DA9295658DB005DA37C /* Views */,
 				512DD200295640770023C6C6 /* Mood_TrackerApp.swift */,
-				512DD202295640770023C6C6 /* ContentView.swift */,
 				512DD204295640780023C6C6 /* Assets.xcassets */,
 				512DD206295640780023C6C6 /* Preview Content */,
 			);
@@ -65,6 +78,41 @@
 				512DD207295640780023C6C6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		519247772956899500A5761F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				51924778295689B500A5761F /* ButtonPressActions.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5192477A29568DAE00A5761F /* Onboarding Content */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Onboarding Content";
+			sourceTree = "<group>";
+		};
+		51B51DA9295658DB005DA37C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				512DD202295640770023C6C6 /* ContentView.swift */,
+				51B51DAA2956598F005DA37C /* Catagories */,
+				5192477A29568DAE00A5761F /* Onboarding Content */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		51B51DAA2956598F005DA37C /* Catagories */ = {
+			isa = PBXGroup;
+			children = (
+				512DD21129564A550023C6C6 /* HYU_CatHome.swift */,
+				51B51DAD29565A0D005DA37C /* HYU_CatAnalyze.swift */,
+				51B51DAB295659F6005DA37C /* HYU_CatSettings.swift */,
+			);
+			path = Catagories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +131,9 @@
 			dependencies = (
 			);
 			name = "Mood Tracker";
+			packageProductDependencies = (
+				51F76C41295776A300DEF058 /* SwiftKeychainWrapper */,
+			);
 			productName = "Mood Tracker";
 			productReference = 512DD1FD295640770023C6C6 /* Mood Tracker.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +162,9 @@
 				Base,
 			);
 			mainGroup = 512DD1F4295640770023C6C6;
+			packageReferences = (
+				51F76C40295776A300DEF058 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+			);
 			productRefGroup = 512DD1FE295640770023C6C6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +191,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				512DD21229564A550023C6C6 /* HYU_CatHome.swift in Sources */,
 				512DD203295640770023C6C6 /* ContentView.swift in Sources */,
+				51B51DAE29565A0D005DA37C /* HYU_CatAnalyze.swift in Sources */,
+				51924779295689B500A5761F /* ButtonPressActions.swift in Sources */,
+				51B51DAC295659F6005DA37C /* HYU_CatSettings.swift in Sources */,
 				512DD201295640770023C6C6 /* Mood_TrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,11 +325,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mood Tracker/Preview Content\"";
+				DEVELOPMENT_TEAM = D7D8LXAUVV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Mood-Tracker-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -295,11 +354,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mood Tracker/Preview Content\"";
+				DEVELOPMENT_TEAM = D7D8LXAUVV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Mood-Tracker-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -337,6 +397,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		51F76C40295776A300DEF058 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		51F76C41295776A300DEF058 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 51F76C40295776A300DEF058 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 512DD1F5295640770023C6C6 /* Project object */;
 }
